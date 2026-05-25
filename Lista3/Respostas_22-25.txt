@@ -1,0 +1,16 @@
+22- 
+Array: Utilize array quando se tem certeza da quantidade máxima de elementos que serão armazenadas no vetor, visto que o Array possui um tamanho fixo que não pode ser alterado durante a execução do código
+Arraylist: O Arraylist deve ser utilizado quando não se sabe qual a quantidade de elementos que deverão ser armazenados no vetor pois possui tamanho dinâmico. Ou seja, seu tamanho pode ser alterado diversas vezes durante a execução do código.
+
+25-
+Herança: Uma herança se dá quando uma classe é "submissa" (filha) à outra (pai), esta classe filha  apresentará além de seus atributos e métodos próprios, os atributos e métodos da classe pai também estarão presentes na classe filha, porém o contrário não é verdadeiro.
+
+Classe base e Subclasse: A classe base é a classe pai, ou seja, uma classe mais genérica possuindo atributos e métodos que deveram ser obrigatoriamente usadas pela classe filha (Subclasse). A subclasse é mais específica no que tange seu significado, apresenta atributos e métodos e obrigatoriamente os métodos e atributos da classe pai (classe base).
+
+Array: O array é uma estrutura de dados nativa da classe java, ou seja, não possui métodos próprios como uma classe e possui tamanho fixo.
+
+Arraylist: A Arraylist é uma classe que possui métodos próprios como o .add() ou .remove(), além disso possui e tamanho dinâmico.
+
+Diferença Array e Arraylist: A diferença central entre ambos é que um é uma classe e outra um estrutura de dados. Uma possui atributos e métodos e a outra não.
+
+Arraylist<Pessoa> armazena Aluno e Professor: Isso acontece se e somente se Aluno e Professor forem classes filhas da classe pai Pessoa, caso contrário, Arraylist<Pessoa> não poderia armazenar objetos da classe Aluno e Professor.

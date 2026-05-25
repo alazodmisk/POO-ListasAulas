@@ -1,0 +1,18 @@
+package br.com.ex13;
+
+public class Professor extends Pessoa {
+    private String materia;
+
+    public Professor(String nome, String materia) {
+        super(nome);
+        this.materia = materia;
+    }
+
+    public String getMateria() {
+        return materia;
+    }
+
+    public void setMateria(String materia) {
+        this.materia = materia;
+    }
+}
