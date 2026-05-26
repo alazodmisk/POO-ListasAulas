@@ -65,24 +65,26 @@ public class JogoDaVelhaController {
 
             view.imprimeTabuleiro(tabuleiro.getTabuleiro());
             this.realizarjogada();
-            view.imprimeTabuleiro(tabuleiro.getTabuleiro());
         
             Simbolo simboloVencedor = tabuleiro.verificaVencedor();
 
             if(simboloVencedor == jogador1.getSimbolo()){
                 this.setJogadorVencedor(this.jogador1);
                 this.setStatus(StatusPartida.VITORIA);
+                view.imprimeTabuleiro(tabuleiro.getTabuleiro());
             }
                 
             if (simboloVencedor == jogador2.getSimbolo()){
-                this.setJogadorVencedor(this.jogador1);
+                this.setJogadorVencedor(this.jogador2);
                 this.setStatus(StatusPartida.VITORIA);
+                view.imprimeTabuleiro(tabuleiro.getTabuleiro());
             }
 
             if (tabuleiro.verificaEmpate()){
                 this.setStatus(StatusPartida.EMPATE);
                 Jogador velha = new Jogador("VELHA", Simbolo.N);
                 this.setJogadorVencedor(velha);;
+                view.imprimeTabuleiro(tabuleiro.getTabuleiro());
             }
         }
 
